@@ -177,3 +177,104 @@ public static void main(String args[]) {
 	System.out.println(!isTrue + " " + ~numOne); //Output will be false -13
 }
 
+2. Arithmetic operators : are used to perform basic mathematical operations like addition , subtraction , multiplication and division 
+
+Eg: 
+public static void main(String args[]) {
+	int numOne = 10;
+	int numTwo = 5;
+	System.out.println(numOne + numTwo); //Output will be 15
+	System.out.println(numOne - numTwo); //Output will be 5
+	System.out.println(numOne * numTwo); //Output will be 50
+	System.out.println(numOne / numTwo); //Output will be 2
+	System.out.println(numOne % numTwo); //Output will be 0
+}
+
+3. Relational operators : are use to compare two values . The result of all the relational operations is either true or false .
+
+Eg :
+public static void main(String args[]) {
+	int numOne = 10;
+	int numTwo = 5;
+	System.out.println(numOne > numTwo); //Output will be true
+}
+
+4. Logical Operators : are used to combine two or more relational expressions or to negate the result of a relational expression 
+
+Eg: 
+public static void main(String args[]) {
+	int numOne = 100;
+	int numTwo = 20;
+	int numThree = 30;
+	System.out.println(numOne > numTwo && numOne > numThree); //Output will be true
+}
+
+5. Ternary operator : is use as single line replacement for if-then-else statements and acts upon three operands.
+
+Syntax: 
+<condition>? <value if condition is true>: <value if condition is false>
+
+Eg: 
+public static void main(String args[]) {
+	int numOne = 10;
+	int numTwo = 5;
+	int min = (numOne < numTwo) ? numOne : numTwo;
+	System.out.println(min); //Output will be 5
+}
+
+6. Assignment operator : is used to assign the value on the right hand side to the valriable on the left hand side of the operator 
+
+Eg : 
+public static void main(String args[]) {
+	int numOne = 10; //The value 10 is assigned to numOne
+	System.out.println(numOne); //Output will be 10
+	numOne += 5;
+	System.out.println(numOne); //Output will be 15
+	numOne -= 5;
+	System.out.println(numOne); //Output will be 10
+	numOne *= 5;
+	System.out.println(numOne); //Output will be 50
+	numOne /= 5;
+	System.out.println(numOne); //Output will be 10
+}
+
+7. Bitwise operators are used to perform manipulation of individual bits of a number.
+
+Before we take a look at the different bitwise operators, let us understand how to convert a decimal number to binary number and vice versa.
+
+The decimal or the base 10 number system is used in everyday life but the binary number system is the basis for representing data in computing systems.
+
+You will now see how to convert a decimal number to binary number.
+
+Step 1:
+
+Divide the decimal number by 2.
+
+Step 2:
+
+Write the number on the right hand side. This will be either 1 or 0.
+
+Step 3:
+
+Divide the result of the division and again by 2 and write the remainder.
+
+Step 4:
+
+Continue this process until the result of the division is 0.
+
+Step 5:
+
+The first remainder that you received is the least significant bit and the last remainder is the most significant bit.
+
+
+
+ 
+
+You will now see how to convert the binary number back to decimal number.
+
+The decimal number is equal to the sum of binary digits (dn) times their power of 2 (2n).
+
+Lets take the example of 11001.
+
+11001 = 1*24+1*23+0*22+0*21+1*20=16+8+0+0+1=25
+
