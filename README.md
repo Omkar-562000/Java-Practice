@@ -374,4 +374,5 @@ if (<condition 1>) {
     }
 }
 
+**Switch Case Statement Logical theory**
 
