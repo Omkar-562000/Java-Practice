@@ -278,3 +278,64 @@ Lets take the example of 11001.
 
 11001 = 1*24+1*23+0*22+0*21+1*20=16+8+0+0+1=25
 
+Data Type Compatibility 
+
+When you assign the value of one data type to another or when you perform operation on two operands, their types mut be compatible with each other . If the data types are not compatible, then the data type of an operand needs to be converted . 
+
+This conversion is of two types :
+
+1. Implicit 
+2. Explicit 
+
+Implicit Type Conversion is also known as Widening conversion. It happens in the below scenarios: 
+
+When a value of a data type with smaller range is assigned to a variable of a compatible data type with larger range. 
+
+When two variables of different data types are involved in an expression, the value of smaller range datatype is converted to a value of larger range datatype and then the operation is performed. 
+
+E.g.: 
+int discountPercentage = 10; 
+double newDiscountPercentage = discountPercentage; 
+
+Explicit Conversion is used when you want to assign a value of larger range data type to a smaller range data type. This conversion is not done by the compiler implicitly as there can be loss of data in some cases. Hence, programmer has to be cautious about such conversions. This is also known as Narrowing conversion. 
+
+E.g.: 
+double totalPrice = 200;  
+int newPrice = totalPrice;  
+
+This will lead to an error because a value of larger range data type, in this case double, cannot be directly assigned to a smaller range data type, in this case int. Here, you need to explicitly typecast double to int as shown below.
+
+int newPrice = (int)totalPrice;
+
+Data Types and Operators 
+
+Types of Control Structures
+1. Sequential : All the statements are executed in the order in which it is written 
+2. Decision / Selection : Changes the flow of execution according to a condition or decision taken 
+Eg:- if,if-else,switch
+3. Iteration : Repeatedly executes the same set of statements based on some condition 
+Eg:- for,while,do-while
+
+
+<p><b> If Statement Logica theory </b></p>
+An "if" statement contains a relational and logical expression followed by a block of statements. Based on the result of the expression, the corresponding statements/code blocks get executed or skipped.
+
+Syntax:
+
+if (<condition>) {  // Curly braces are not required if there is only one statement inside the block
+    <statements>;
+}
+
+ The statements inside the "if" block gets executed only when the condition evaluates to true.
+
+ An if statement can be written along with an else statement. The condition/expression given in the if statement is checked and set of statements are executed based on the outcome of the condition. If the condition is true, the statements written in if block get executed. If the condition is false, then the statements inside else block get executed.
+
+Syntax:
+
+if (<condition>) { 
+    <statements>; 
+} 
+else { 
+    <statements>; 
+} 
+
