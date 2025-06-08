@@ -310,14 +310,14 @@ int newPrice = (int)totalPrice;
 Data Types and Operators 
 
 Types of Control Structures
-1. Sequential : All the statements are executed in the order in which it is written 
-2. Decision / Selection : Changes the flow of execution according to a condition or decision taken 
+- Sequential : All the statements are executed in the order in which it is written 
+- Decision / Selection : Changes the flow of execution according to a condition or decision taken 
 Eg:- if,if-else,switch
-3. Iteration : Repeatedly executes the same set of statements based on some condition 
+- Iteration : Repeatedly executes the same set of statements based on some condition 
 Eg:- for,while,do-while
 
 
-<p><b> If Statement Logica theory </b></p>
+**If Statement Logical theory**
 An "if" statement contains a relational and logical expression followed by a block of statements. Based on the result of the expression, the corresponding statements/code blocks get executed or skipped.
 
 Syntax:
@@ -328,6 +328,7 @@ if (<condition>) {  // Curly braces are not required if there is only one stat
 
  The statements inside the "if" block gets executed only when the condition evaluates to true.
 
+**If-Else Statement Logical theory**
  An if statement can be written along with an else statement. The condition/expression given in the if statement is checked and set of statements are executed based on the outcome of the condition. If the condition is true, the statements written in if block get executed. If the condition is false, then the statements inside else block get executed.
 
 Syntax:
@@ -338,4 +339,39 @@ if (<condition>) {
 else { 
     <statements>; 
 } 
+
+**If-else if Statement Logical theory**
+You can also have else if statements. As the name suggests, it is a combination of else and if. Like else, it extends an if statement to execute a different set of statements in case the original if expression evaluates to false. Then, the conditions present inside the else if blocks are checked. Once a condition evaluates to true, remaining else if and else statements are skipped.
+
+When all the conditions are false, the else block is executed. Coding the else block is optional.
+
+Syntax:
+
+if (<condition 1>) {
+    <statements>;
+}
+else if (<condition 2>) {
+    <statements>;
+}
+else if (<condition 3>) {
+    <statements>;
+}
+else {
+    <statements>;
+}
+
+**Nested If Statement Logical theory**
+When an if statement is written within another if statement, it is known as nested if statement. It enables us to test multiple criteria. The inner if block condition gets executed only when the condition of the outer if block evaluates to true.
+
+Syntax:
+
+if (<condition 1>) {
+    if (<condition 2>) {
+        <statements>;
+    }
+    else {
+        <statements>;
+    }
+}
+
 
