@@ -376,3 +376,52 @@ if (<condition 1>) {
 
 **Switch Case Statement Logical theory**
 
+The switch statement enables to select a block from a set of options. It allows the flow of execution to be switched according to a value.
+
+Syntax:
+
+switch (expression or variable) {
+   case value1: <statements>;
+                break;
+   case value2: <statements>;
+                break;
+   default: <statements>;
+}
+
+During execution, the result of expression or variable written in the switch statement is compared with the constant values of cases one by one. When a match is found, the set of statements present in that case are executed until a break statement is encountered or till the end of switch block, whichever occurs first. In the absence of break statement, the flow of control falls through subsequent cases and executes the statements of all those cases until it reaches a break statement or end of switch block. 
+
+The switch block can have a special case called default. The default case is executed when none of the cases match with the value of expression/variable. default is optional. If none of the cases match and if there is no default statement, the control comes out of switch block without executing any case.
+
+In Java, the switch block works only for the following data types:
+
+char and integral datatypes are supported in switch-case statement, but float or double are not supported.
+
+String datatype is also supported in switch-case statement from Java 7 version onwards
+
+**While -Iteration Control Structures**
+
+Iteration control structures are used to execute a set of statements repeatedly. To terminate the repetition, a condition is required. 
+
+Let us consider that the girl in the image should jump over the rope repetitively until she is tired. That means, a repeated action has to be performed as long as a condition (getting tired) is met. Also, the number of times the girl is going to jump over the rope cannot be estimated before. 
+
+**While-Loop**
+
+Similarly, in programming, when you want to repeatedly execute the statements as long as a condition is met, you can use the iteration control structure called while loop. When the condition becomes false, the while loop terminates and control goes to the statement written after the while loop. The while loop is used when the number of iterations are not known. In case of while loop, the condition is tested before entering the while loop block and hence it is known as an entry-controlled loop.  
+
+Syntax: 
+
+while (<condition>) { 
+   <statements>; 
+} 
+
+**Do-While Loop**
+
+When the loop has to be executed at least once before the condition is checked, do-while loop is used. After the first execution, the loop then gets repeated as long as the condition is true. In case of do-while loop, the condition is tested after executing the code block. Hence, it is called an exit-controlled loop.  
+
+Syntax: 
+
+do { 
+   <statements>; 
+} while (<condition>); 
+ 
+ 
