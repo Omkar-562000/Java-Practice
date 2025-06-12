@@ -424,4 +424,79 @@ do {
    <statements>; 
 } while (<condition>); 
  
- 
+ **For Loop Statement**
+
+ The 'for' loop is used when the number of iterations are known.  
+
+Syntax: 
+
+for (<initialization>; <condition>; <increment/decrement>) { 
+     <statements>; 
+} 
+Initialization: It is used for initializing the variables used for checking the condition. It is executed only once and gets executed when the loop starts.
+
+Condition: It is used for checking the condition to decide whether the loop should be terminated or executed. If the condition is true, the body of the loop is executed, else the loop terminates.  
+
+Increment / Decrement: It increments or decrements the value of the variable used for checking the condition after every iteration of the loop.  
+
+All the three parts of for loop are optional. For instance, the for loop can also be written as for(;;) where none of the parts are provided. This for loop will result in infinite loop.
+
+**Nested Loop**
+
+A nested loop is a loop within another loop , an inner loop within the body of an outer one . 
+
+class Numbers {
+	public static void main(String[] args) {
+		int rows = 10;
+		for (int i = 1; i <= rows; ++i) {
+			for (int j = 1; j <= i; ++j) {
+                // print displays the text without adding a new line
+				System.out.print(j + " "); 
+			}
+			System.out.println(""); // println displays the text along with a new line
+		}
+	}
+}
+
+break statement is used to terminate a loop. After terminating the loop, the next statement following the loop gets executed. In case of break statement written in nested loops, the inner most loop gets terminated and the flow of control continues with the statements of outer loop.  
+
+break statement is also used to terminate the execution of a switch case, as already discussed.
+
+ **Coninue Statement**
+
+ continue statement is used to skip the current iteration of a loop and continue with the next iteration. In case of while and do-while loops, continue statement skips the remaining code of the loop and passes the control to check the loop condition. Whereas in case of for loop, the control goes to the increment section and then the condition is checked.
+
+ **OOPS**
+
+ Object Oriented Programming(OOP) is a type of programming approach which enables the programmers to work with real life entities like Customer, Trainee, Employee, Company, Product, Food, Book, etc.
+
+Java, C#, Simula, JavaScript, Python, C++, Visual Basic .NET, Ruby, Scala, PHP etc. are some of the popular object-oriented programming languages.
+
+OOP helps a programmer in breaking down the code into smaller modules. These modules (classes) will have state(represented by attributes/variables) and functionality (represented by behavior/methods).
+
+These modules can then be used for representing the individual real life entities known as objects.
+
+E.g. - We can have a class named Customer to represent the state and behavior of all customers. Each individual customer can then be represented using an object of the Customer class.
+
+OOP has many advantages. Some of them are listed below:
+
+Modularity: OOP enables programmers to create modules that do not need to be changed when an object is added.
+
+A programmer can simply create a new object to represent a new real-life entity.
+
+Scalability: OOP makes development and maintenance easier.
+
+Since the design is modular, part of the system can be updated in case of issues without a need to make large scale changes.
+
+In structured programming (like C language), it is not easy to manage the code as project size grows. These languages have functions that do not clearly segregate the functionality and attributes and makes it difficult for the programmer to understand the code.
+
+Data hiding: OOP provides hiding and securing data.
+
+Real life scenario: OOP provides ability to simulate real world event more effectively and efficiently.
+
+**Important about Class and Object**
+
+A representation specifying the characteristics and behaviors of an object is called a class. It is not a real life entity but a template for representing real life entities.
+
+An object, which is an instance of a class is a real life entity which has some attributes and behaviors. The class determines the attributes and behaviors which an object should possess to belong to the class.
+
