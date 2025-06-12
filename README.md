@@ -500,3 +500,37 @@ A representation specifying the characteristics and behaviors of an object is ca
 
 An object, which is an instance of a class is a real life entity which has some attributes and behaviors. The class determines the attributes and behaviors which an object should possess to belong to the class.
 
+## Class 
+
+A class can have attributes (characteristics) and methods (behaviors)
+
+Attributes are the elements or variables which hold the values or state of a particular entity.
+
+Update the class Customer as shown below:
+
+class Customer {
+	public String customerId;
+	public String customerName;
+	public long contactNumber;
+	public String address;
+}
+In the code given above, customerId, customerName, contactNumber and address are the attributes of the class Customer.
+
+Attributes are represented in classes by variables.
+
+Attributes represent the state of a real life entity.
+
+Each real life entity can have its own values for those variables. Since each instance of a class has different values for its variables, these variables are called instance variables.
+
+Each instance variable has a data type associated with it. In the given code, String and long are the data types used.
+
+Apart from data types, you can see another keyword being used, public. It is an access modifier.
+
+Access modifiers help in limiting access to the members of a class. It can be used along with class, attribute and method.
+
+There are multiple access modifiers. Let us discuss two of them now.
+
+private - private allows members to be accessible only inside the class
+
+public - public allows members to be accessible in other classes as well
+
